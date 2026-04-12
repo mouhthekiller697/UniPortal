@@ -910,5 +910,74 @@
         "Embedded Technologies"
       ]
     }
+  },
+  {
+    "id": "esst-el-achour",
+    "name": "Ecole supérieure de science et technologie el achour",
+    "type": "Private Superior School",
+    "founded": "2018",
+    "city": "Algiers",
+    "coordinates": {
+      "lat": 36.7286,
+      "lon": 2.9794
+    },
+    "website": "https://www.esst-sup.com/",
+    "aliases": [
+      "ESST El Achour",
+      "Ecole superieure de science et technologie el achour",
+      "ESST Sup"
+    ],
+    "keywords": [
+      "science",
+      "technology",
+      "engineering",
+      "private school"
+    ],
+    "campus": "El Achour Campus",
+    "languages": [
+      "French",
+      "Arabic",
+      "English"
+    ],
+    "description": "Private superior school in El Achour focused on science, technology, and applied digital skills.",
+    "highlights": [
+      "Applied science and technology tracks",
+      "Practice-oriented learning with internships",
+      "Career-focused programs in engineering and digital fields"
+    ],
+    "admissions": "Admission is based on file review and interview according to available seats in each specialty.",
+    "studentLife": "Student clubs, practical workshops, and mentoring activities support professional readiness.",
+    "contact": "Official contacts and admission updates are published on the ESST El Achour website.",
+    "socialMedia": {
+      "facebook": "https://www.facebook.com/search/top/?q=Ecole%20sup%C3%A9rieure%20de%20science%20et%20technologie%20el%20achour",
+      "instagram": "https://www.instagram.com/explore/tags/esstelachour/",
+      "linkedin": "https://www.linkedin.com/search/results/companies/?keywords=Ecole%20sup%C3%A9rieure%20de%20science%20et%20technologie%20el%20achour",
+      "youtube": "https://www.youtube.com/results?search_query=Ecole+sup%C3%A9rieure+de+science+et+technologie+el+achour"
+    },
+    "gallery": [
+      {
+        "src": "https://source.unsplash.com/1200x800/?university,campus,algiers",
+        "alt": "University-style campus in Algiers",
+        "caption": "Campus environment in Algiers"
+      },
+      {
+        "src": "https://source.unsplash.com/1200x800/?engineering,students,classroom",
+        "alt": "Students in an engineering classroom",
+        "caption": "Technology-focused learning environment"
+      }
+    ],
+    "formations": {
+      "licenses": [
+        "Computer Science",
+        "Information Systems",
+        "Industrial Engineering Basics"
+      ],
+      "masters": [
+        "Software Engineering",
+        "Data Analytics",
+        "Network and Cloud Systems"
+      ],
+      "doctorates": []
+    }
   }
 ]

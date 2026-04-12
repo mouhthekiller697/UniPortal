@@ -18,12 +18,41 @@ const admissionsEl = document.getElementById("institution-admissions");
 const studentLifeEl = document.getElementById("institution-student-life");
 const contactEl = document.getElementById("institution-contact");
 const officialLink = document.getElementById("official-website");
+const socialLinksEl = document.getElementById("social-links");
+const galleryEl = document.getElementById("institution-gallery");
+const galleryImageEl = document.getElementById("institution-image");
+const galleryCaptionEl = document.getElementById("gallery-caption");
+const galleryPrevEl = document.getElementById("gallery-prev");
+const galleryNextEl = document.getElementById("gallery-next");
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
+let galleryItems = [];
+let galleryIndex = 0;
+
+const socialPlatforms = [
+  { key: "facebook", label: "Facebook", icon: "fa-facebook" },
+  { key: "instagram", label: "Instagram", icon: "fa-instagram" },
+  { key: "linkedin", label: "LinkedIn", icon: "fa-linkedin" },
+  { key: "youtube", label: "YouTube", icon: "fa-youtube" },
+];
+
 const formatCoordinates = (coordinates) =>
   `${coordinates.lat.toFixed(4)}, ${coordinates.lon.toFixed(4)}`;
+
+const isValidHttpUrl = (value) => {
+  if (!value) {
+    return false;
+  }
+
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === "https:" || parsed.protocol === "http:";
+  } catch {
+    return false;
+  }
+};
 
 const renderFormations = (formations) => {
   formationsEl.innerHTML = "";
@@ -87,10 +116,95 @@ const renderHighlights = (highlights) => {
   });
 };
 
+const getDefaultSocialLinks = (establishment) => {
+  const query = encodeURIComponent(establishment.name);
+  return {
+    facebook: `https://www.facebook.com/search/top/?q=${query}`,
+    instagram: `https://www.instagram.com/explore/tags/${encodeURIComponent(establishment.name.replace(/\s+/g, ""))}/`,
+    linkedin: `https://www.linkedin.com/search/results/companies/?keywords=${query}`,
+    youtube: `https://www.youtube.com/results?search_query=${query}`,
+  };
+};
+
+const renderSocialLinks = (establishment) => {
+  socialLinksEl.innerHTML = "";
+  const links = {
+    ...getDefaultSocialLinks(establishment),
+    ...(establishment.socialMedia || {}),
+  };
+
+  socialPlatforms.forEach((platform) => {
+    const href = links[platform.key];
+    if (!isValidHttpUrl(href)) {
+      return;
+    }
+
+    const link = document.createElement("a");
+    link.className = "button-link social-button";
+    link.href = href;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.innerHTML = `<i class="fa-brands ${platform.icon}" aria-hidden="true"></i><span>${platform.label}</span>`;
+    socialLinksEl.appendChild(link);
+  });
+};
+
+const showGalleryImage = () => {
+  if (!galleryItems.length) {
+    galleryEl.hidden = true;
+    return;
+  }
+
+  const current = galleryItems[galleryIndex];
+  galleryImageEl.src = current.src;
+  galleryImageEl.alt = current.alt;
+  galleryCaptionEl.textContent = current.caption || "";
+  galleryEl.hidden = false;
+
+  const hasMultipleItems = galleryItems.length > 1;
+  galleryPrevEl.hidden = !hasMultipleItems;
+  galleryNextEl.hidden = !hasMultipleItems;
+};
+
+const renderGallery = (establishment) => {
+  const fallbackImage = {
+    src: `https://source.unsplash.com/1200x800/?${encodeURIComponent(`${establishment.name} ${establishment.city} Algeria campus`)}`,
+    alt: `${establishment.name} campus photo`,
+    caption: `Campus visual for ${establishment.name}`,
+  };
+
+  galleryItems = (establishment.gallery || []).filter(
+    (item) => item && isValidHttpUrl(item.src)
+  );
+
+  if (!galleryItems.length) {
+    galleryItems = [fallbackImage];
+  }
+
+  galleryIndex = 0;
+  showGalleryImage();
+};
+
 const showNotFound = () => {
   detailsSection.hidden = true;
   notFoundSection.hidden = false;
 };
+
+galleryPrevEl.addEventListener("click", () => {
+  if (!galleryItems.length) {
+    return;
+  }
+  galleryIndex = (galleryIndex - 1 + galleryItems.length) % galleryItems.length;
+  showGalleryImage();
+});
+
+galleryNextEl.addEventListener("click", () => {
+  if (!galleryItems.length) {
+    return;
+  }
+  galleryIndex = (galleryIndex + 1) % galleryItems.length;
+  showGalleryImage();
+});
 
 if (!id) {
   showNotFound();
@@ -114,6 +228,8 @@ if (!id) {
       coordinatesEl.textContent = formatCoordinates(establishment.coordinates);
       renderFormations(establishment.formations);
       renderHighlights(establishment.highlights);
+      renderGallery(establishment);
+      renderSocialLinks(establishment);
       descriptionEl.textContent =
         establishment.description ||
         "This institution offers accredited higher-education programs across several disciplines.";
@@ -125,7 +241,7 @@ if (!id) {
         "Students benefit from campus clubs, mentoring, and scientific activities.";
       contactEl.textContent = establishment.contact || "Contact details are available on the official website.";
 
-      if (establishment.website) {
+      if (isValidHttpUrl(establishment.website)) {
         officialLink.href = establishment.website;
         officialLink.textContent = "Official Website";
         officialLink.classList.remove("disabled");
@@ -135,6 +251,7 @@ if (!id) {
         officialLink.classList.add("disabled");
       }
 
+      document.title = `${establishment.name} | UniPortSite`;
       renderMap(establishment.coordinates);
     })
     .catch(() => {
