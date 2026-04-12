@@ -64,7 +64,11 @@ const renderMap = (coordinates) => {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
   L.marker([coordinates.lat, coordinates.lon]).addTo(map);
-  setTimeout(() => map.invalidateSize(), 0);
+
+  const refreshMapSize = () => map.invalidateSize();
+  requestAnimationFrame(refreshMapSize);
+  window.addEventListener("load", refreshMapSize, { once: true });
+  window.addEventListener("resize", refreshMapSize);
 };
 
 const renderHighlights = (highlights) => {
