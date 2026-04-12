@@ -181,7 +181,7 @@ const renderGallery = (establishment) => {
   };
 
   galleryItems = (establishment.gallery || []).filter(
-    (item) => item && isValidHttpUrl(item.src)
+    (item) => item && item.src && isValidHttpUrl(item.src)
   );
 
   if (!galleryItems.length) {
