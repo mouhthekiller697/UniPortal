@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Institution Details | The Portal Of Higher Education</title>
+    <title>Institution Details | UniPortSite</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="brand">The Portal Of Higher Education</div>
+      <div class="brand">UniPortSite</div>
       <nav class="site-nav">
         <a href="index.html">Home</a>
       </nav>
@@ -40,6 +40,17 @@
               <li><strong>Campus:</strong> <span id="institution-campus"></span></li>
               <li><strong>Languages:</strong> <span id="institution-languages"></span></li>
             </ul>
+          </div>
+          <div class="info-card">
+            <h2>Campus Gallery</h2>
+            <div class="gallery" id="institution-gallery">
+              <img id="institution-image" alt="" loading="lazy" />
+              <div class="gallery-controls">
+                <button class="gallery-nav" id="gallery-prev" type="button" aria-label="Previous image">←</button>
+                <button class="gallery-nav" id="gallery-next" type="button" aria-label="Next image">→</button>
+              </div>
+              <p class="gallery-caption" id="gallery-caption"></p>
+            </div>
           </div>
           <div class="info-card wide-card">
             <h2>About the Institution</h2>
@@ -70,6 +81,7 @@
             <h2>Useful Links</h2>
             <div class="link-stack">
               <a class="button-link" id="official-website" target="_blank" rel="noopener">Official Website</a>
+              <div class="social-link-grid" id="social-links"></div>
               <a
                 class="button-link"
                 id="ministry-link"
