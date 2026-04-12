@@ -956,12 +956,12 @@
     },
     "gallery": [
       {
-        "src": "https://source.unsplash.com/1200x800/?university,campus,algiers",
+        "src": "https://picsum.photos/seed/esst-el-achour-campus/1200/800",
         "alt": "University-style campus in Algiers",
         "caption": "Campus environment in Algiers"
       },
       {
-        "src": "https://source.unsplash.com/1200x800/?engineering,students,classroom",
+        "src": "https://picsum.photos/seed/esst-el-achour-classroom/1200/800",
         "alt": "Students in an engineering classroom",
         "caption": "Technology-focused learning environment"
       }

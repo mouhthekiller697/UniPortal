@@ -118,9 +118,16 @@ const renderHighlights = (highlights) => {
 
 const getDefaultSocialLinks = (establishment) => {
   const query = encodeURIComponent(establishment.name);
+  const hashtag = establishment.name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s]/g, "")
+    .trim()
+    .replace(/\s+/g, "_");
   return {
     facebook: `https://www.facebook.com/search/top/?q=${query}`,
-    instagram: `https://www.instagram.com/explore/tags/${encodeURIComponent(establishment.name.replace(/\s+/g, ""))}/`,
+    instagram: `https://www.instagram.com/explore/tags/${encodeURIComponent(hashtag)}/`,
     linkedin: `https://www.linkedin.com/search/results/companies/?keywords=${query}`,
     youtube: `https://www.youtube.com/results?search_query=${query}`,
   };
@@ -168,7 +175,7 @@ const showGalleryImage = () => {
 
 const renderGallery = (establishment) => {
   const fallbackImage = {
-    src: `https://source.unsplash.com/1200x800/?${encodeURIComponent(`${establishment.name} ${establishment.city} Algeria campus`)}`,
+    src: `https://picsum.photos/seed/${encodeURIComponent(`${establishment.id}-campus`)}/1200/800`,
     alt: `${establishment.name} campus photo`,
     caption: `Campus visual for ${establishment.name}`,
   };
