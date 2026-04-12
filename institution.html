@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Institution Details | The Portal Of Higher Education</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">The Portal Of Higher Education</div>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="details" id="institution-details">
+        <h1 id="institution-name">Institution</h1>
+        <p id="institution-meta"></p>
+        <div class="details-grid">
+          <div class="info-card">
+            <h2>Overview</h2>
+            <ul>
+              <li><strong>Founded:</strong> <span id="institution-founded"></span></li>
+              <li><strong>City:</strong> <span id="institution-city"></span></li>
+              <li><strong>Type:</strong> <span id="institution-type"></span></li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h2>Location</h2>
+            <div>
+              <strong>Coordinates:</strong>
+              <span id="institution-coordinates"></span>
+            </div>
+            <div id="map" aria-label="Map showing institution location"></div>
+          </div>
+          <div class="info-card">
+            <h2>Formations & Certificates</h2>
+            <div id="institution-formations"></div>
+          </div>
+          <div class="info-card">
+            <h2>Useful Links</h2>
+            <div class="link-stack">
+              <a class="button-link" id="official-website" target="_blank" rel="noopener">Official Website</a>
+              <a
+                class="button-link"
+                id="ministry-link"
+                href="https://www.mesrs.dz/"
+                target="_blank"
+                rel="noopener"
+              >
+                Ministry of Higher Education
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="back-link" href="index.html">← Back to home</a>
+      </section>
+
+      <section class="not-found" id="not-found" hidden>
+        <h2>Institution not found</h2>
+        <p>Please return to the home page and search again.</p>
+        <a class="back-link" href="index.html">Go back to home</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>made with <span class="heart">❤</span> by MouhTheKiller</div>
+      <a class="github-link" href="https://github.com/mouhthekiller697" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        <span>GitHub</span>
+      </a>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j7kSMzS6R+g0uX8tx2PpKW2g7Q+0pkp6ChW4tk8=" crossorigin=""></script>
+    <script src="scripts/institution.js" defer></script>
+  </body>
+</html>
