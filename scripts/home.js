@@ -9,11 +9,35 @@ const datalist = document.getElementById("establishment-list");
 let establishments = [];
 
 const normalizeText = (value) =>
-  value
+  (value || "")
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
     .trim();
+
+const getSearchTerms = (item) => [
+  item.name,
+  item.city,
+  item.type,
+  ...(item.aliases || []),
+  ...(item.keywords || []),
+];
+
+const getSearchableText = (item) => normalizeText(getSearchTerms(item).join(" "));
+
+const isQueryMatch = (item, query) => {
+  const searchableText = getSearchableText(item);
+  if (searchableText.includes(query)) {
+    return true;
+  }
+
+  return query
+    .split(" ")
+    .filter(Boolean)
+    .every((token) => searchableText.includes(token));
+};
 
 const renderResults = (items) => {
   searchResults.innerHTML = "";
@@ -43,14 +67,10 @@ const handleSearch = (event) => {
     return;
   }
 
-  const matches = establishments.filter((item) => {
-    const name = normalizeText(item.name);
-    const city = normalizeText(item.city);
-    return name.includes(query) || city.includes(query);
-  });
+  const matches = establishments.filter((item) => isQueryMatch(item, query));
 
-  const exactMatch = matches.find(
-    (item) => normalizeText(item.name) === query
+  const exactMatch = matches.find((item) =>
+    getSearchTerms(item).some((term) => normalizeText(term) === query)
   );
 
   if (exactMatch) {
@@ -82,11 +102,20 @@ fetch(dataUrl)
   .then((data) => {
     establishments = data;
     datalist.innerHTML = "";
+
+    const options = new Set();
     data.forEach((item) => {
-      const option = document.createElement("option");
-      option.value = item.name;
-      datalist.appendChild(option);
+      options.add(item.name);
+      (item.aliases || []).forEach((alias) => options.add(alias));
     });
+
+    Array.from(options)
+      .sort((a, b) => a.localeCompare(b))
+      .forEach((value) => {
+        const option = document.createElement("option");
+        option.value = value;
+        datalist.appendChild(option);
+      });
   })
   .catch(() => {
     searchFeedback.textContent =

@@ -5,13 +5,57 @@
     "type": "University",
     "founded": "1879",
     "city": "Algiers",
-    "coordinates": { "lat": 36.7676, "lon": 3.0536 },
+    "coordinates": {
+      "lat": 36.7676,
+      "lon": 3.0536
+    },
     "website": "https://www.univ-alger.dz/",
     "formations": {
-      "licenses": ["Computer Science", "Medicine", "Pharmacy", "Law", "Economics"],
-      "masters": ["Bioinformatics", "Public Health", "International Law", "Business Administration"],
-      "doctorates": ["Computer Science", "Medicine", "Law", "Economics"]
-    }
+      "licenses": [
+        "Computer Science",
+        "Medicine",
+        "Pharmacy",
+        "Law",
+        "Economics"
+      ],
+      "masters": [
+        "Bioinformatics",
+        "Public Health",
+        "International Law",
+        "Business Administration"
+      ],
+      "doctorates": [
+        "Computer Science",
+        "Medicine",
+        "Law",
+        "Economics"
+      ]
+    },
+    "aliases": [
+      "UA1",
+      "Benyoucef Benkhedda University",
+      "Université d'Alger 1"
+    ],
+    "keywords": [
+      "medicine",
+      "law",
+      "pharmacy"
+    ],
+    "campus": "Central Algiers Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Historic flagship university with strong faculties in medicine, law, and social sciences.",
+    "highlights": [
+      "Faculty of Medicine and Pharmacy",
+      "Law and Political Science programs",
+      "Research labs in health and humanities"
+    ],
+    "admissions": "Primary admission channel is national orientation, with selective tracks for health sciences.",
+    "studentLife": "Student associations, cultural events, and a rich academic environment in central Algiers.",
+    "contact": "See official website for admissions office and faculty contacts."
   },
   {
     "id": "univ-alger-2",
@@ -19,13 +63,55 @@
     "type": "University",
     "founded": "1971",
     "city": "Algiers",
-    "coordinates": { "lat": 36.7167, "lon": 3.1472 },
+    "coordinates": {
+      "lat": 36.7167,
+      "lon": 3.1472
+    },
     "website": "https://www.univ-alger2.dz/",
     "formations": {
-      "licenses": ["Literature", "Linguistics", "Psychology", "Sociology", "History"],
-      "masters": ["Applied Linguistics", "Educational Sciences", "Social Research", "Translation Studies"],
-      "doctorates": ["Human Sciences", "Linguistics", "Social Sciences"]
-    }
+      "licenses": [
+        "Literature",
+        "Linguistics",
+        "Psychology",
+        "Sociology",
+        "History"
+      ],
+      "masters": [
+        "Applied Linguistics",
+        "Educational Sciences",
+        "Social Research",
+        "Translation Studies"
+      ],
+      "doctorates": [
+        "Human Sciences",
+        "Linguistics",
+        "Social Sciences"
+      ]
+    },
+    "aliases": [
+      "UA2",
+      "Université d'Alger 2"
+    ],
+    "keywords": [
+      "languages",
+      "human sciences",
+      "translation"
+    ],
+    "campus": "Bouzaréah Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Specialized university in human and social sciences with strong language and translation tracks.",
+    "highlights": [
+      "Language and Literature faculties",
+      "Psychology and sociology departments",
+      "Translation and interpretation pathways"
+    ],
+    "admissions": "Admission follows orientation by specialty with additional internal requirements for selected programs.",
+    "studentLife": "Active clubs in debate, literature, and social research projects.",
+    "contact": "Consult the official university portal for enrollment and faculty directories."
   },
   {
     "id": "univ-alger-3",
@@ -33,13 +119,54 @@
     "type": "University",
     "founded": "2009",
     "city": "Algiers",
-    "coordinates": { "lat": 36.7514, "lon": 3.1696 },
+    "coordinates": {
+      "lat": 36.7514,
+      "lon": 3.1696
+    },
     "website": "https://www.univ-alger3.dz/",
     "formations": {
-      "licenses": ["Management", "Accounting", "Economics", "Political Science"],
-      "masters": ["Finance", "Marketing", "Public Administration", "International Relations"],
-      "doctorates": ["Economics", "Management Sciences", "Political Science"]
-    }
+      "licenses": [
+        "Management",
+        "Accounting",
+        "Economics",
+        "Political Science"
+      ],
+      "masters": [
+        "Finance",
+        "Marketing",
+        "Public Administration",
+        "International Relations"
+      ],
+      "doctorates": [
+        "Economics",
+        "Management Sciences",
+        "Political Science"
+      ]
+    },
+    "aliases": [
+      "UA3",
+      "Université d'Alger 3"
+    ],
+    "keywords": [
+      "economics",
+      "management",
+      "finance"
+    ],
+    "campus": "Dely Ibrahim Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "University focused on economics, management, and political science disciplines.",
+    "highlights": [
+      "Management and commerce pathways",
+      "Applied economics and finance training",
+      "Policy and governance studies"
+    ],
+    "admissions": "National orientation and specialty prerequisites are applied depending on program demand.",
+    "studentLife": "Entrepreneurship clubs and student-led conferences on economics and policy.",
+    "contact": "Admissions and administration contacts are listed on the official website."
   },
   {
     "id": "usthb",
@@ -47,13 +174,56 @@
     "type": "University",
     "founded": "1974",
     "city": "Algiers",
-    "coordinates": { "lat": 36.711, "lon": 3.1804 },
+    "coordinates": {
+      "lat": 36.711,
+      "lon": 3.1804
+    },
     "website": "https://www.usthb.dz/",
     "formations": {
-      "licenses": ["Computer Science", "Mathematics", "Physics", "Electronics", "Biology"],
-      "masters": ["Artificial Intelligence", "Applied Physics", "Telecommunications", "Biotechnology"],
-      "doctorates": ["Computer Science", "Physics", "Materials Science", "Biology"]
-    }
+      "licenses": [
+        "Computer Science",
+        "Mathematics",
+        "Physics",
+        "Electronics",
+        "Biology"
+      ],
+      "masters": [
+        "Artificial Intelligence",
+        "Applied Physics",
+        "Telecommunications",
+        "Biotechnology"
+      ],
+      "doctorates": [
+        "Computer Science",
+        "Physics",
+        "Materials Science",
+        "Biology"
+      ]
+    },
+    "aliases": [
+      "USTHB",
+      "Houari Boumediene University"
+    ],
+    "keywords": [
+      "science",
+      "engineering",
+      "technology"
+    ],
+    "campus": "Bab Ezzouar Scientific Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Major science and technology university known for engineering and applied research.",
+    "highlights": [
+      "Engineering and exact sciences faculties",
+      "Strong computer science research ecosystem",
+      "Industry-oriented laboratories"
+    ],
+    "admissions": "Admission is orientation-based with competitive thresholds for high-demand engineering programs.",
+    "studentLife": "Large campus with scientific clubs, hackathons, and innovation events.",
+    "contact": "Refer to USTHB official channels for admissions and registrar services."
   },
   {
     "id": "enp-alger",
@@ -61,13 +231,51 @@
     "type": "Superior School",
     "founded": "1925",
     "city": "Algiers",
-    "coordinates": { "lat": 36.7312, "lon": 3.1035 },
+    "coordinates": {
+      "lat": 36.7312,
+      "lon": 3.1035
+    },
     "website": "https://www.enp.edu.dz/",
     "formations": {
-      "licenses": ["Preparatory Engineering Cycle", "Industrial Engineering Basics"],
-      "masters": ["Mechanical Engineering", "Electrical Engineering", "Civil Engineering", "Process Engineering"],
-      "doctorates": ["Engineering Sciences", "Energy Systems"]
-    }
+      "licenses": [
+        "Preparatory Engineering Cycle",
+        "Industrial Engineering Basics"
+      ],
+      "masters": [
+        "Mechanical Engineering",
+        "Electrical Engineering",
+        "Civil Engineering",
+        "Process Engineering"
+      ],
+      "doctorates": [
+        "Engineering Sciences",
+        "Energy Systems"
+      ]
+    },
+    "aliases": [
+      "ENP",
+      "Polytech Alger"
+    ],
+    "keywords": [
+      "polytechnic",
+      "engineering",
+      "grande ecole"
+    ],
+    "campus": "El Harrach Engineering Campus",
+    "languages": [
+      "French",
+      "English",
+      "Arabic"
+    ],
+    "description": "Prestigious engineering school offering advanced technical and industrial training.",
+    "highlights": [
+      "Core engineering cycle",
+      "Specialized masters in major branches",
+      "Applied industrial research and innovation"
+    ],
+    "admissions": "Selective admissions mainly through preparatory and national merit pathways.",
+    "studentLife": "Strong engineering clubs, competitions, and industry networking activities.",
+    "contact": "Visit the ENP portal for admissions calendar and entrance requirements."
   },
   {
     "id": "esi-alger",
@@ -75,13 +283,50 @@
     "type": "Superior School",
     "founded": "1969",
     "city": "Algiers",
-    "coordinates": { "lat": 36.7057, "lon": 3.1708 },
+    "coordinates": {
+      "lat": 36.7057,
+      "lon": 3.1708
+    },
     "website": "https://www.esi.dz/",
     "formations": {
-      "licenses": ["Computer Science", "Information Systems"],
-      "masters": ["Software Engineering", "Data Science", "Cybersecurity"],
-      "doctorates": ["Computer Science", "Information Systems"]
-    }
+      "licenses": [
+        "Computer Science",
+        "Information Systems"
+      ],
+      "masters": [
+        "Software Engineering",
+        "Data Science",
+        "Cybersecurity"
+      ],
+      "doctorates": [
+        "Computer Science",
+        "Information Systems"
+      ]
+    },
+    "aliases": [
+      "ESI",
+      "Higher National School of Computer Science"
+    ],
+    "keywords": [
+      "informatics",
+      "cybersecurity",
+      "software"
+    ],
+    "campus": "Oued Smar Campus",
+    "languages": [
+      "French",
+      "English",
+      "Arabic"
+    ],
+    "description": "Leading computer science school with a reputation in software, AI, and cybersecurity training.",
+    "highlights": [
+      "Software engineering pathways",
+      "Data science and AI specialization",
+      "Cybersecurity and systems research"
+    ],
+    "admissions": "Highly selective entry after preparatory pathways and merit-based orientation.",
+    "studentLife": "Very active coding clubs and national programming competitions.",
+    "contact": "Official ESI website provides admission channels and student services."
   },
   {
     "id": "univ-constantine-1",
@@ -89,13 +334,53 @@
     "type": "University",
     "founded": "1969",
     "city": "Constantine",
-    "coordinates": { "lat": 36.365, "lon": 6.614 },
+    "coordinates": {
+      "lat": 36.365,
+      "lon": 6.614
+    },
     "website": "https://www.umc.edu.dz/",
     "formations": {
-      "licenses": ["Computer Science", "Medicine", "Architecture", "Chemistry"],
-      "masters": ["Biomedical Sciences", "Urban Planning", "Analytical Chemistry"],
-      "doctorates": ["Medicine", "Architecture", "Computer Science"]
-    }
+      "licenses": [
+        "Computer Science",
+        "Medicine",
+        "Architecture",
+        "Chemistry"
+      ],
+      "masters": [
+        "Biomedical Sciences",
+        "Urban Planning",
+        "Analytical Chemistry"
+      ],
+      "doctorates": [
+        "Medicine",
+        "Architecture",
+        "Computer Science"
+      ]
+    },
+    "aliases": [
+      "UMC",
+      "Université Constantine 1"
+    ],
+    "keywords": [
+      "medicine",
+      "architecture",
+      "science"
+    ],
+    "campus": "Mentouri Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Comprehensive university in eastern Algeria known for medical and engineering-related studies.",
+    "highlights": [
+      "Medical and health sciences faculty",
+      "Architecture and planning tracks",
+      "Strong core science departments"
+    ],
+    "admissions": "Admission is managed through orientation with high thresholds for medicine and architecture.",
+    "studentLife": "Rich student life including scientific events and volunteer associations.",
+    "contact": "See UMC portal for detailed enrollment and department contacts."
   },
   {
     "id": "univ-oran-1",
@@ -103,13 +388,53 @@
     "type": "University",
     "founded": "1965",
     "city": "Oran",
-    "coordinates": { "lat": 35.697, "lon": -0.627 },
+    "coordinates": {
+      "lat": 35.697,
+      "lon": -0.627
+    },
     "website": "https://www.univ-oran1.dz/",
     "formations": {
-      "licenses": ["Computer Science", "Marine Biology", "Chemistry", "Mathematics"],
-      "masters": ["Software Engineering", "Oceanography", "Applied Chemistry"],
-      "doctorates": ["Computer Science", "Marine Sciences", "Chemistry"]
-    }
+      "licenses": [
+        "Computer Science",
+        "Marine Biology",
+        "Chemistry",
+        "Mathematics"
+      ],
+      "masters": [
+        "Software Engineering",
+        "Oceanography",
+        "Applied Chemistry"
+      ],
+      "doctorates": [
+        "Computer Science",
+        "Marine Sciences",
+        "Chemistry"
+      ]
+    },
+    "aliases": [
+      "UO1",
+      "Université Oran 1"
+    ],
+    "keywords": [
+      "science",
+      "chemistry",
+      "biology"
+    ],
+    "campus": "Es Senia Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Large multidisciplinary university serving western Algeria with science-focused programs.",
+    "highlights": [
+      "STEM-oriented faculties",
+      "Marine and environmental science tracks",
+      "Applied chemistry and computing labs"
+    ],
+    "admissions": "National orientation and faculty quotas apply depending on specialty.",
+    "studentLife": "Campus offers numerous clubs and student-led academic initiatives.",
+    "contact": "Official portal includes faculty contacts and enrollment guides."
   },
   {
     "id": "univ-tlemcen",
@@ -117,13 +442,53 @@
     "type": "University",
     "founded": "1974",
     "city": "Tlemcen",
-    "coordinates": { "lat": 34.878, "lon": -1.316 },
+    "coordinates": {
+      "lat": 34.878,
+      "lon": -1.316
+    },
     "website": "http://www.univ-tlemcen.dz/",
     "formations": {
-      "licenses": ["Computer Science", "Law", "Economics", "Electrical Engineering"],
-      "masters": ["Renewable Energy", "Business Law", "Networks and Systems"],
-      "doctorates": ["Engineering Sciences", "Law", "Economics"]
-    }
+      "licenses": [
+        "Computer Science",
+        "Law",
+        "Economics",
+        "Electrical Engineering"
+      ],
+      "masters": [
+        "Renewable Energy",
+        "Business Law",
+        "Networks and Systems"
+      ],
+      "doctorates": [
+        "Engineering Sciences",
+        "Law",
+        "Economics"
+      ]
+    },
+    "aliases": [
+      "UABT",
+      "Université de Tlemcen"
+    ],
+    "keywords": [
+      "law",
+      "engineering",
+      "economics"
+    ],
+    "campus": "Tlemcen Main Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Public university recognized for strong engineering, law, and economics faculties.",
+    "highlights": [
+      "Law and social sciences pathways",
+      "Engineering and renewable energy tracks",
+      "Research collaboration with regional partners"
+    ],
+    "admissions": "Programs are assigned through orientation with faculty-level requirements.",
+    "studentLife": "Students participate in scientific clubs, arts activities, and local innovation events.",
+    "contact": "Enrollment and contact details are updated on the university website."
   },
   {
     "id": "univ-bejaia",
@@ -131,12 +496,419 @@
     "type": "University",
     "founded": "1983",
     "city": "Bejaia",
-    "coordinates": { "lat": 36.753, "lon": 5.084 },
+    "coordinates": {
+      "lat": 36.753,
+      "lon": 5.084
+    },
     "website": "https://www.univ-bejaia.dz/",
     "formations": {
-      "licenses": ["Computer Science", "Geology", "Biology", "Economics"],
-      "masters": ["Data Engineering", "Environmental Sciences", "Entrepreneurship"],
-      "doctorates": ["Computer Science", "Earth Sciences", "Biology"]
+      "licenses": [
+        "Computer Science",
+        "Geology",
+        "Biology",
+        "Economics"
+      ],
+      "masters": [
+        "Data Engineering",
+        "Environmental Sciences",
+        "Entrepreneurship"
+      ],
+      "doctorates": [
+        "Computer Science",
+        "Earth Sciences",
+        "Biology"
+      ]
+    },
+    "aliases": [
+      "Université Abderrahmane Mira",
+      "Bejaia University"
+    ],
+    "keywords": [
+      "biology",
+      "earth sciences",
+      "data engineering"
+    ],
+    "campus": "Targa Ouzemour Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Dynamic public university with broad science and economics offerings in Kabylia.",
+    "highlights": [
+      "Science and technology streams",
+      "Economics and management programs",
+      "Research in environment and data engineering"
+    ],
+    "admissions": "Orientation determines placement with selective standards for competitive tracks.",
+    "studentLife": "Cultural and scientific clubs support practical projects and community engagement.",
+    "contact": "Check the official site for student support and admissions information."
+  },
+  {
+    "id": "esst-alger",
+    "name": "École Supérieure des Sciences et Technologies d'Alger (ESST)",
+    "type": "Private Superior School",
+    "founded": "2006",
+    "city": "Algiers",
+    "coordinates": {
+      "lat": 36.7447,
+      "lon": 3.0422
+    },
+    "website": "https://esst.dz/",
+    "aliases": [
+      "ESST",
+      "Ecole Superieure des Sciences et Technologies",
+      "ESST Alger"
+    ],
+    "keywords": [
+      "private",
+      "engineering",
+      "computer science",
+      "business"
+    ],
+    "campus": "Algiers Campus",
+    "languages": [
+      "French",
+      "English",
+      "Arabic"
+    ],
+    "description": "Private higher-education school offering applied programs in technology, management, and digital fields.",
+    "highlights": [
+      "Applied computer and digital technology tracks",
+      "Professionalized training with internships",
+      "Market-oriented private programs"
+    ],
+    "admissions": "Admission is based on application review, interview, and available seats by specialty.",
+    "studentLife": "Students benefit from career workshops, mentorship, and project-based learning.",
+    "contact": "For admissions and tuition details, consult the ESST official website.",
+    "formations": {
+      "licenses": [
+        "Computer Science",
+        "Information Systems",
+        "Business Management"
+      ],
+      "masters": [
+        "Software Engineering",
+        "Data Analytics",
+        "Digital Marketing"
+      ],
+      "doctorates": []
+    }
+  },
+  {
+    "id": "esaa-alger",
+    "name": "École Supérieure Algérienne des Affaires (ESAA)",
+    "type": "Private Superior School",
+    "founded": "2004",
+    "city": "Algiers",
+    "coordinates": {
+      "lat": 36.7552,
+      "lon": 3.0339
+    },
+    "website": "https://www.esaa.dz/",
+    "aliases": [
+      "ESAA",
+      "Algerian Business School"
+    ],
+    "keywords": [
+      "private",
+      "business",
+      "management",
+      "mba"
+    ],
+    "campus": "Cheraga Campus",
+    "languages": [
+      "French",
+      "English",
+      "Arabic"
+    ],
+    "description": "Private business school focused on management, leadership, and corporate skills development.",
+    "highlights": [
+      "Executive and management education",
+      "Business-specialized masters pathways",
+      "Industry-partnered training model"
+    ],
+    "admissions": "Selective admissions based on academic file and interview for each business track.",
+    "studentLife": "Professional networking events, company talks, and entrepreneurship activities.",
+    "contact": "Program requirements and admissions contacts are listed on ESAA website.",
+    "formations": {
+      "licenses": [
+        "Business Administration",
+        "Finance",
+        "Marketing"
+      ],
+      "masters": [
+        "MBA",
+        "International Management",
+        "Financial Management"
+      ],
+      "doctorates": []
+    }
+  },
+  {
+    "id": "univ-setif-1",
+    "name": "University of Setif 1 Ferhat Abbas",
+    "type": "University",
+    "founded": "1978",
+    "city": "Setif",
+    "coordinates": {
+      "lat": 36.1904,
+      "lon": 5.4136
+    },
+    "website": "https://www.univ-setif.dz/",
+    "aliases": [
+      "UFAS1",
+      "Université Sétif 1"
+    ],
+    "keywords": [
+      "medicine",
+      "science",
+      "engineering"
+    ],
+    "campus": "El Bez Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Public university with strong medicine, science, and engineering education.",
+    "highlights": [
+      "Medical and pharmaceutical studies",
+      "Engineering and exact sciences",
+      "Regional research hubs"
+    ],
+    "admissions": "Admissions are orientation-based with competitive thresholds for health specialties.",
+    "studentLife": "Scientific competitions, clubs, and active student community initiatives.",
+    "contact": "All faculty and admissions contacts are available on the official portal.",
+    "formations": {
+      "licenses": [
+        "Medicine",
+        "Computer Science",
+        "Biology",
+        "Civil Engineering"
+      ],
+      "masters": [
+        "Biomedical Engineering",
+        "Software Systems",
+        "Renewable Energy"
+      ],
+      "doctorates": [
+        "Medicine",
+        "Engineering Sciences",
+        "Computer Science"
+      ]
+    }
+  },
+  {
+    "id": "univ-blida-1",
+    "name": "University Blida 1 (Saad Dahlab)",
+    "type": "University",
+    "founded": "1981",
+    "city": "Blida",
+    "coordinates": {
+      "lat": 36.4706,
+      "lon": 2.8306
+    },
+    "website": "https://www.univ-blida.dz/",
+    "aliases": [
+      "UB1",
+      "Université Blida 1"
+    ],
+    "keywords": [
+      "aerospace",
+      "agronomy",
+      "science"
+    ],
+    "campus": "Ouled Yaich Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Public university known for aerospace, natural sciences, and technology programs.",
+    "highlights": [
+      "Aerospace engineering pathways",
+      "Natural and life sciences",
+      "Research in technology and environment"
+    ],
+    "admissions": "Orientation assignment applies with institutional prerequisites by faculty.",
+    "studentLife": "Robotics and technical clubs alongside cultural and sports activities.",
+    "contact": "Student guidance and registration details are on the official website.",
+    "formations": {
+      "licenses": [
+        "Aerospace Engineering",
+        "Computer Science",
+        "Agronomy",
+        "Chemistry"
+      ],
+      "masters": [
+        "Aerospace Systems",
+        "Artificial Intelligence",
+        "Food Technology"
+      ],
+      "doctorates": [
+        "Engineering Sciences",
+        "Agronomy",
+        "Computer Science"
+      ]
+    }
+  },
+  {
+    "id": "ummto",
+    "name": "Mouloud Mammeri University of Tizi Ouzou",
+    "type": "University",
+    "founded": "1977",
+    "city": "Tizi Ouzou",
+    "coordinates": {
+      "lat": 36.7112,
+      "lon": 4.0507
+    },
+    "website": "https://www.ummto.dz/",
+    "aliases": [
+      "UMMTO",
+      "Université Mouloud Mammeri"
+    ],
+    "keywords": [
+      "human sciences",
+      "engineering",
+      "languages"
+    ],
+    "campus": "Hasnaoua Campus",
+    "languages": [
+      "Arabic",
+      "French",
+      "English"
+    ],
+    "description": "Major regional university with multidisciplinary programs in science, engineering, and humanities.",
+    "highlights": [
+      "Engineering and architecture faculties",
+      "Human and social sciences tracks",
+      "Strong linguistic and cultural studies"
+    ],
+    "admissions": "Admissions are managed through national orientation and faculty criteria.",
+    "studentLife": "Active academic clubs and cultural initiatives throughout the academic year.",
+    "contact": "For up-to-date enrollment details, consult the official university website.",
+    "formations": {
+      "licenses": [
+        "Electrical Engineering",
+        "Computer Science",
+        "Law",
+        "Languages"
+      ],
+      "masters": [
+        "Embedded Systems",
+        "Software Engineering",
+        "Public Law"
+      ],
+      "doctorates": [
+        "Engineering Sciences",
+        "Computer Science",
+        "Law"
+      ]
+    }
+  },
+  {
+    "id": "ensia-alger",
+    "name": "École Nationale Supérieure d'Intelligence Artificielle (ENSIA)",
+    "type": "Superior School",
+    "founded": "2021",
+    "city": "Algiers",
+    "coordinates": {
+      "lat": 36.7321,
+      "lon": 2.9924
+    },
+    "website": "https://ensia.edu.dz/",
+    "aliases": [
+      "ENSIA",
+      "Higher National School of AI"
+    ],
+    "keywords": [
+      "ai",
+      "machine learning",
+      "data science"
+    ],
+    "campus": "Sidi Abdellah Technopole",
+    "languages": [
+      "French",
+      "English",
+      "Arabic"
+    ],
+    "description": "Specialized higher school dedicated to artificial intelligence and advanced digital technologies.",
+    "highlights": [
+      "AI-focused engineering curriculum",
+      "Machine learning and data pathways",
+      "Innovation and startup ecosystem links"
+    ],
+    "admissions": "Selective admissions after competitive orientation and high academic thresholds.",
+    "studentLife": "Hackathons, AI clubs, and collaborative innovation projects are central to campus life.",
+    "contact": "Admissions information and contacts are available on ENSIA official channels.",
+    "formations": {
+      "licenses": [
+        "Artificial Intelligence",
+        "Data Science",
+        "Computer Engineering"
+      ],
+      "masters": [
+        "Machine Learning",
+        "Natural Language Processing",
+        "Computer Vision"
+      ],
+      "doctorates": [
+        "Artificial Intelligence",
+        "Data Science"
+      ]
+    }
+  },
+  {
+    "id": "ensta-alger",
+    "name": "École Nationale Supérieure en Technologies Avancées (ENSTA)",
+    "type": "Superior School",
+    "founded": "2011",
+    "city": "Algiers",
+    "coordinates": {
+      "lat": 36.7369,
+      "lon": 2.9966
+    },
+    "website": "https://www.ensta.edu.dz/",
+    "aliases": [
+      "ENSTA Alger",
+      "Advanced Technologies School"
+    ],
+    "keywords": [
+      "embedded systems",
+      "robotics",
+      "advanced technologies"
+    ],
+    "campus": "Sidi Abdellah Technopole",
+    "languages": [
+      "French",
+      "English",
+      "Arabic"
+    ],
+    "description": "Engineering school focused on advanced technologies, mechatronics, and embedded systems.",
+    "highlights": [
+      "Advanced electronics and embedded systems",
+      "Automation and robotics specialization",
+      "Strong project-based engineering culture"
+    ],
+    "admissions": "Selective admissions through preparatory pathways and national merit orientation.",
+    "studentLife": "Technical clubs, prototyping workshops, and innovation competitions.",
+    "contact": "Official website lists admissions process and institutional contacts.",
+    "formations": {
+      "licenses": [
+        "Embedded Systems",
+        "Industrial Computing",
+        "Electronics"
+      ],
+      "masters": [
+        "Robotics",
+        "Cyber-Physical Systems",
+        "Smart Manufacturing"
+      ],
+      "doctorates": [
+        "Automation",
+        "Embedded Technologies"
+      ]
     }
   }
 ]
