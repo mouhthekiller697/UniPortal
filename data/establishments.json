@@ -1,0 +1,142 @@
+[
+  {
+    "id": "univ-alger-1",
+    "name": "University of Algiers 1 (Benyoucef Benkhedda)",
+    "type": "University",
+    "founded": "1879",
+    "city": "Algiers",
+    "coordinates": { "lat": 36.7676, "lon": 3.0536 },
+    "website": "https://www.univ-alger.dz/",
+    "formations": {
+      "licenses": ["Computer Science", "Medicine", "Pharmacy", "Law", "Economics"],
+      "masters": ["Bioinformatics", "Public Health", "International Law", "Business Administration"],
+      "doctorates": ["Computer Science", "Medicine", "Law", "Economics"]
+    }
+  },
+  {
+    "id": "univ-alger-2",
+    "name": "University of Algiers 2 (Abou El Kacem Saâdallah)",
+    "type": "University",
+    "founded": "1971",
+    "city": "Algiers",
+    "coordinates": { "lat": 36.7167, "lon": 3.1472 },
+    "website": "https://www.univ-alger2.dz/",
+    "formations": {
+      "licenses": ["Literature", "Linguistics", "Psychology", "Sociology", "History"],
+      "masters": ["Applied Linguistics", "Educational Sciences", "Social Research", "Translation Studies"],
+      "doctorates": ["Human Sciences", "Linguistics", "Social Sciences"]
+    }
+  },
+  {
+    "id": "univ-alger-3",
+    "name": "University of Algiers 3 (Ibrahim Sultan Cheibout)",
+    "type": "University",
+    "founded": "2009",
+    "city": "Algiers",
+    "coordinates": { "lat": 36.7514, "lon": 3.1696 },
+    "website": "https://www.univ-alger3.dz/",
+    "formations": {
+      "licenses": ["Management", "Accounting", "Economics", "Political Science"],
+      "masters": ["Finance", "Marketing", "Public Administration", "International Relations"],
+      "doctorates": ["Economics", "Management Sciences", "Political Science"]
+    }
+  },
+  {
+    "id": "usthb",
+    "name": "USTHB - University of Science and Technology Houari Boumediene",
+    "type": "University",
+    "founded": "1974",
+    "city": "Algiers",
+    "coordinates": { "lat": 36.711, "lon": 3.1804 },
+    "website": "https://www.usthb.dz/",
+    "formations": {
+      "licenses": ["Computer Science", "Mathematics", "Physics", "Electronics", "Biology"],
+      "masters": ["Artificial Intelligence", "Applied Physics", "Telecommunications", "Biotechnology"],
+      "doctorates": ["Computer Science", "Physics", "Materials Science", "Biology"]
+    }
+  },
+  {
+    "id": "enp-alger",
+    "name": "École Nationale Polytechnique d'Alger",
+    "type": "Superior School",
+    "founded": "1925",
+    "city": "Algiers",
+    "coordinates": { "lat": 36.7312, "lon": 3.1035 },
+    "website": "https://www.enp.edu.dz/",
+    "formations": {
+      "licenses": ["Preparatory Engineering Cycle", "Industrial Engineering Basics"],
+      "masters": ["Mechanical Engineering", "Electrical Engineering", "Civil Engineering", "Process Engineering"],
+      "doctorates": ["Engineering Sciences", "Energy Systems"]
+    }
+  },
+  {
+    "id": "esi-alger",
+    "name": "École Nationale Supérieure d'Informatique (ESI)",
+    "type": "Superior School",
+    "founded": "1969",
+    "city": "Algiers",
+    "coordinates": { "lat": 36.7057, "lon": 3.1708 },
+    "website": "https://www.esi.dz/",
+    "formations": {
+      "licenses": ["Computer Science", "Information Systems"],
+      "masters": ["Software Engineering", "Data Science", "Cybersecurity"],
+      "doctorates": ["Computer Science", "Information Systems"]
+    }
+  },
+  {
+    "id": "univ-constantine-1",
+    "name": "University of Constantine 1 (Mentouri Brothers)",
+    "type": "University",
+    "founded": "1969",
+    "city": "Constantine",
+    "coordinates": { "lat": 36.365, "lon": 6.614 },
+    "website": "https://www.umc.edu.dz/",
+    "formations": {
+      "licenses": ["Computer Science", "Medicine", "Architecture", "Chemistry"],
+      "masters": ["Biomedical Sciences", "Urban Planning", "Analytical Chemistry"],
+      "doctorates": ["Medicine", "Architecture", "Computer Science"]
+    }
+  },
+  {
+    "id": "univ-oran-1",
+    "name": "University of Oran 1 Ahmed Ben Bella",
+    "type": "University",
+    "founded": "1965",
+    "city": "Oran",
+    "coordinates": { "lat": 35.697, "lon": -0.627 },
+    "website": "https://www.univ-oran1.dz/",
+    "formations": {
+      "licenses": ["Computer Science", "Marine Biology", "Chemistry", "Mathematics"],
+      "masters": ["Software Engineering", "Oceanography", "Applied Chemistry"],
+      "doctorates": ["Computer Science", "Marine Sciences", "Chemistry"]
+    }
+  },
+  {
+    "id": "univ-tlemcen",
+    "name": "University of Tlemcen (Abou Bekr Belkaïd)",
+    "type": "University",
+    "founded": "1974",
+    "city": "Tlemcen",
+    "coordinates": { "lat": 34.878, "lon": -1.316 },
+    "website": "http://www.univ-tlemcen.dz/",
+    "formations": {
+      "licenses": ["Computer Science", "Law", "Economics", "Electrical Engineering"],
+      "masters": ["Renewable Energy", "Business Law", "Networks and Systems"],
+      "doctorates": ["Engineering Sciences", "Law", "Economics"]
+    }
+  },
+  {
+    "id": "univ-bejaia",
+    "name": "University of Bejaia (Abderrahmane Mira)",
+    "type": "University",
+    "founded": "1983",
+    "city": "Bejaia",
+    "coordinates": { "lat": 36.753, "lon": 5.084 },
+    "website": "https://www.univ-bejaia.dz/",
+    "formations": {
+      "licenses": ["Computer Science", "Geology", "Biology", "Economics"],
+      "masters": ["Data Engineering", "Environmental Sciences", "Entrepreneurship"],
+      "doctorates": ["Computer Science", "Earth Sciences", "Biology"]
+    }
+  }
+]
