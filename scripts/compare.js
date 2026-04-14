@@ -10,7 +10,24 @@ const compareCardB = document.getElementById("compare-card-b");
 
 let establishments = [];
 
-const formatList = (items = []) => (items.length ? items.map((item) => `<li>${item}</li>`).join("") : "<li>Not available</li>");
+const { escapeHtml } = window.UniPortalDataUtils;
+
+const isValidHttpUrl = (value) => {
+  if (!value) {
+    return false;
+  }
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === "https:" || parsed.protocol === "http:";
+  } catch {
+    return false;
+  }
+};
+
+const formatList = (items = []) =>
+  items.length
+    ? items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")
+    : "<li>Not available</li>";
 
 const formatFormations = (formations = {}) => {
   const levels = [
@@ -25,25 +42,25 @@ const formatFormations = (formations = {}) => {
       if (!list.length) {
         return "";
       }
-      return `<div><strong>${level.label}</strong><ul>${formatList(list)}</ul></div>`;
+      return `<div><strong>${escapeHtml(level.label)}</strong><ul>${formatList(list)}</ul></div>`;
     })
     .join("");
 };
 
 const renderCard = (target, establishment) => {
+  const websiteLink = isValidHttpUrl(establishment.website)
+    ? `<a href="${escapeHtml(establishment.website)}" target="_blank" rel="noopener noreferrer">Visit website</a>`
+    : "Not available";
+
   target.innerHTML = `
-    <h2>${establishment.name}</h2>
-    <p class="compare-meta">${establishment.type} • ${establishment.city}</p>
+    <h2>${escapeHtml(establishment.name)}</h2>
+    <p class="compare-meta">${escapeHtml(establishment.type)} • ${escapeHtml(establishment.city)}</p>
     <ul class="compare-facts">
-      <li><strong>Founded:</strong> ${establishment.founded || "Not available"}</li>
-      <li><strong>Campus:</strong> ${establishment.campus || "Not available"}</li>
-      <li><strong>Languages:</strong> ${(establishment.languages || []).join(", ") || "Not available"}</li>
-      <li><strong>Website:</strong> ${
-        establishment.website
-          ? `<a href="${establishment.website}" target="_blank" rel="noopener">Visit website</a>`
-          : "Not available"
-      }</li>
-      <li><strong>Contact:</strong> ${establishment.contact || "Not available"}</li>
+      <li><strong>Founded:</strong> ${escapeHtml(establishment.founded || "Not available")}</li>
+      <li><strong>Campus:</strong> ${escapeHtml(establishment.campus || "Not available")}</li>
+      <li><strong>Languages:</strong> ${escapeHtml((establishment.languages || []).join(", ") || "Not available")}</li>
+      <li><strong>Website:</strong> ${websiteLink}</li>
+      <li><strong>Contact:</strong> ${escapeHtml(establishment.contact || "Not available")}</li>
     </ul>
     <div class="compare-block">
       <h3>Formations</h3>
@@ -55,7 +72,7 @@ const renderCard = (target, establishment) => {
     </div>
     <div class="compare-block">
       <h3>Admissions</h3>
-      <p>${establishment.admissions || "Not available"}</p>
+      <p>${escapeHtml(establishment.admissions || "Not available")}</p>
     </div>
   `;
 };
@@ -100,7 +117,10 @@ const populateSelects = () => {
   const options = establishments
     .slice()
     .sort((a, b) => a.name.localeCompare(b.name))
-    .map((item) => `<option value="${item.id}">${item.name} (${item.city})</option>`)
+    .map(
+      (item) =>
+        `<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)} (${escapeHtml(item.city)})</option>`
+    )
     .join("");
   firstSelect.insertAdjacentHTML("beforeend", options);
   secondSelect.insertAdjacentHTML("beforeend", options);

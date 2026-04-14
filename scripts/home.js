@@ -11,7 +11,8 @@ const compareFirst = document.getElementById("compare-first");
 const compareSecond = document.getElementById("compare-second");
 const compareFeedback = document.getElementById("compare-feedback");
 
-const { normalizeText, getSearchTerms, getSearchableText, deduplicateEstablishments } = window.UniPortalDataUtils;
+const { normalizeText, escapeHtml, getSearchTerms, getSearchableText, deduplicateEstablishments } =
+  window.UniPortalDataUtils;
 
 let establishments = [];
 let suggestions = [];
@@ -22,13 +23,7 @@ const clearFeedback = () => {
   compareFeedback.textContent = "";
 };
 
-const escapeHtml = (value) =>
-  value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
+const escapeRegExp = (value) => value.replace(/[\\^$.*+?()[\]{}|]/g, "\\$&");
 
 const makeHighlightText = (text, query) => {
   const normalizedQuery = normalizeText(query);
@@ -37,12 +32,15 @@ const makeHighlightText = (text, query) => {
   }
 
   const tokens = normalizedQuery.split(" ").filter(Boolean);
+  const tokenPatterns = tokens.map((token) => ({
+    token,
+    pattern: new RegExp(`(${escapeRegExp(token)})`, "ig"),
+  }));
   let highlighted = escapeHtml(text);
-  tokens.forEach((token) => {
-    if (!token) {
+  tokenPatterns.forEach(({ token, pattern }) => {
+    if (!token || !pattern) {
       return;
     }
-    const pattern = new RegExp(`(${token.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "ig");
     highlighted = highlighted.replace(pattern, "<mark>$1</mark>");
   });
   return highlighted;
@@ -132,7 +130,7 @@ const renderAutocomplete = (query) => {
       <li role="option" id="autocomplete-option-${index}" aria-selected="false">
         <button type="button" data-index="${index}">
           <span class="suggestion-name">${makeHighlightText(item.name, normalizedQuery)}</span>
-          <span class="suggestion-meta">${item.type} • ${item.city}</span>
+          <span class="suggestion-meta">${escapeHtml(item.type)} • ${escapeHtml(item.city)}</span>
         </button>
       </li>
     `
@@ -229,7 +227,10 @@ const populateCompareSelects = (data) => {
   const optionsHtml = data
     .slice()
     .sort((a, b) => a.name.localeCompare(b.name))
-    .map((item) => `<option value="${item.id}">${item.name} (${item.city})</option>`)
+    .map(
+      (item) =>
+        `<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)} (${escapeHtml(item.city)})</option>`
+    )
     .join("");
   compareFirst.insertAdjacentHTML("beforeend", optionsHtml);
   compareSecond.insertAdjacentHTML("beforeend", optionsHtml);

@@ -23,6 +23,14 @@
       });
   };
 
+  const escapeHtml = (value) =>
+    String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+
   const getSearchTerms = (item) => [
     item.name,
     item.city,
@@ -48,10 +56,7 @@
     const normalizedName = normalizeText(item.name);
     const normalizedCity = normalizeText(item.city);
     const normalizedWebsite = normalizeText(item.website || "");
-    if (normalizedWebsite) {
-      return `${normalizedName}|${normalizedCity}|${normalizedWebsite}`;
-    }
-    return `${normalizedName}|${normalizedCity}`;
+    return JSON.stringify([normalizedName, normalizedCity, normalizedWebsite]);
   };
 
   const mergeEstablishments = (base, candidate) => {
@@ -94,6 +99,7 @@
 
   globalScope.UniPortalDataUtils = {
     normalizeText,
+    escapeHtml,
     getSearchTerms,
     getSearchableText,
     deduplicateEstablishments,
