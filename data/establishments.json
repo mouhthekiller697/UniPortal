@@ -558,39 +558,60 @@
     "aliases": [
       "ESST",
       "Ecole Superieure des Sciences et Technologies",
-      "ESST Alger"
+      "ESST Alger",
+      "ESST El Achour",
+      "Ecole superieure de science et technologie el achour",
+      "ESST Sup"
     ],
     "keywords": [
       "private",
       "engineering",
       "computer science",
-      "business"
+      "business",
+      "science",
+      "technology",
+      "private school"
     ],
-    "campus": "Algiers Campus",
+    "campus": "Algiers Campus (including El Achour site)",
     "languages": [
       "French",
       "English",
       "Arabic"
     ],
-    "description": "Private higher-education school offering applied programs in technology, management, and digital fields.",
+    "description": "Private higher-education school offering applied programs in technology, management, and digital fields across Algiers sites.",
     "highlights": [
       "Applied computer and digital technology tracks",
       "Professionalized training with internships",
-      "Market-oriented private programs"
+      "Market-oriented private programs",
+      "Career-focused programs in engineering and digital fields"
     ],
     "admissions": "Admission is based on application review, interview, and available seats by specialty.",
     "studentLife": "Students benefit from career workshops, mentorship, and project-based learning.",
     "contact": "For admissions and tuition details, consult the ESST official website.",
+    "gallery": [
+      {
+        "src": "https://picsum.photos/seed/esst-el-achour-campus/1200/800",
+        "alt": "University-style campus in Algiers",
+        "caption": "Campus environment in Algiers"
+      },
+      {
+        "src": "https://picsum.photos/seed/esst-el-achour-classroom/1200/800",
+        "alt": "Students in an engineering classroom",
+        "caption": "Technology-focused learning environment"
+      }
+    ],
     "formations": {
       "licenses": [
         "Computer Science",
         "Information Systems",
-        "Business Management"
+        "Business Management",
+        "Industrial Engineering Basics"
       ],
       "masters": [
         "Software Engineering",
         "Data Analytics",
-        "Digital Marketing"
+        "Digital Marketing",
+        "Network and Cloud Systems"
       ],
       "doctorates": []
     }
@@ -911,67 +932,5 @@
       ]
     }
   },
-  {
-    "id": "esst-el-achour",
-    "name": "Ecole supérieure de science et technologie el achour",
-    "type": "Private Superior School",
-    "founded": "2018",
-    "city": "Algiers",
-    "coordinates": {
-      "lat": 36.7286,
-      "lon": 2.9794
-    },
-    "website": "https://www.esst-sup.com/",
-    "aliases": [
-      "ESST El Achour",
-      "Ecole superieure de science et technologie el achour",
-      "ESST Sup"
-    ],
-    "keywords": [
-      "science",
-      "technology",
-      "engineering",
-      "private school"
-    ],
-    "campus": "El Achour Campus",
-    "languages": [
-      "French",
-      "Arabic",
-      "English"
-    ],
-    "description": "Private superior school in El Achour focused on science, technology, and applied digital skills.",
-    "highlights": [
-      "Applied science and technology tracks",
-      "Practice-oriented learning with internships",
-      "Career-focused programs in engineering and digital fields"
-    ],
-    "admissions": "Admission is based on file review and interview according to available seats in each specialty.",
-    "studentLife": "Student clubs, practical workshops, and mentoring activities support professional readiness.",
-    "contact": "Official contacts and admission updates are published on the ESST El Achour website.",
-    "gallery": [
-      {
-        "src": "https://picsum.photos/seed/esst-el-achour-campus/1200/800",
-        "alt": "University-style campus in Algiers",
-        "caption": "Campus environment in Algiers"
-      },
-      {
-        "src": "https://picsum.photos/seed/esst-el-achour-classroom/1200/800",
-        "alt": "Students in an engineering classroom",
-        "caption": "Technology-focused learning environment"
-      }
-    ],
-    "formations": {
-      "licenses": [
-        "Computer Science",
-        "Information Systems",
-        "Industrial Engineering Basics"
-      ],
-      "masters": [
-        "Software Engineering",
-        "Data Analytics",
-        "Network and Cloud Systems"
-      ],
-      "doctorates": []
-    }
   }
 ]
