@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Institutions | UniPortSite</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">UniPortSite</div>
+      <div class="header-right">
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="compare.html">Compare</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Switch theme"
+          title="Switch theme"
+        >
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="details compare-section">
+        <h1>Compare 2 Institutions</h1>
+        <p class="compare-lead">Choose two institutions to view their information side by side.</p>
+
+        <form class="compare-form compare-form-page" id="compare-form">
+          <select id="compare-first" required>
+            <option value="">Choose first institution</option>
+          </select>
+          <select id="compare-second" required>
+            <option value="">Choose second institution</option>
+          </select>
+          <button type="submit">Compare</button>
+        </form>
+        <p class="compare-feedback" id="compare-feedback" role="status" aria-live="polite"></p>
+
+        <div class="compare-grid" id="compare-grid" hidden>
+          <article class="compare-card" id="compare-card-a"></article>
+          <article class="compare-card" id="compare-card-b"></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>made with <span class="heart">❤</span> by MouhTheKiller</div>
+      <a class="github-link" href="https://github.com/mouhthekiller697" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        <span>GitHub</span>
+      </a>
+    </footer>
+
+    <script src="scripts/data-utils.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+    <script src="scripts/compare.js" defer></script>
+  </body>
+</html>

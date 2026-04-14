@@ -24,6 +24,7 @@ const galleryImageEl = document.getElementById("institution-image");
 const galleryCaptionEl = document.getElementById("gallery-caption");
 const galleryPrevEl = document.getElementById("gallery-prev");
 const galleryNextEl = document.getElementById("gallery-next");
+const compareThisEl = document.getElementById("compare-this");
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
@@ -219,7 +220,8 @@ if (!id) {
   fetch(dataUrl)
     .then((response) => response.json())
     .then((data) => {
-      const establishment = data.find((item) => item.id === id);
+      const establishments = window.UniPortalDataUtils.deduplicateEstablishments(data);
+      const establishment = establishments.find((item) => item.id === id);
       if (!establishment) {
         showNotFound();
         return;
@@ -259,6 +261,7 @@ if (!id) {
       }
 
       document.title = `${establishment.name} | UniPortSite`;
+      compareThisEl.href = `compare.html?a=${encodeURIComponent(establishment.id)}`;
       renderMap(establishment.coordinates);
     })
     .catch(() => {
